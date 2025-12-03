@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Personal Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            color: yellow;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            font-size: larger;
+            border-bottom: 2px solid yellow;
+        }
+
+        #img1 {
+            margin-left: 20px;
+            height: 155px;
+            width: 155px;
+            margin-top: 20px;
+        }
+
+        #sk {
+            height: 210px;
+            width: 210px;
+            border: 5px solid black;
+            border-radius: 10px;
+        }
+
+        #sk:hover {
+            border: 3px solid rgb(248, 248, 111);
+            box-shadow: 0 0 15px rgb(248, 248, 111);
+        }
+
+        h2 {
+            color: white;
+
+        }
+
+        #pro {
+            width: 500px;
+            margin: 10px;
+        }
+
+        #img2 {
+            height: 300px;
+            width: 400px;
+            margin-left: 40px;
+        }
+
+        #self {
+            line-height: 35px;
+            font-size: 20px;
+
+        }
+
+        label {
+            color: white; 
+        }
+
+        input:hover {
+            border: 3px solid rgb(89, 194, 242);
+        }
+
+        textarea:hover {
+            border: 3px solid rgb(89, 194, 242);
+        }
+
+        button {
+            justify-content: center;
+        }
+
+        #pro:hover {
+            box-shadow: 0 0 15px rgb(248, 248, 111);
+        }
+
+        #con:hover {
+            box-shadow: 0 0 15px rgb(248, 248, 111);
+        }
+
+        #header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 9999;
+        }
+
+        @media(min-width:425px) {
+            img {
+                height: 250px;
+                width: 250px;
+            }
+        }
+
+        @media(min-width:768px) {
+            img {
+                height: 300px;
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid" id="header" style="position: fixed;">
+        <header>
+            <div class="row bg-dark pt-5 " id="nav">
+                <nav>
+                    <a href="#about">MySelf</a>
+                    <a href="#Skills">Skills</a>
+                    <a href="#Projects">Project</a>
+                    <a href="#Contact">Contact</a>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <div class=" container-fluid bg-dark text-white  ">
+        <div class="container d-flex flex-column justify-content-center ">
+            <div class="row m-5 " id="about" style="padding-top: 100px;">
+                  <div class="col-12 col-sm-6 col-sm-4  ">
+                    
+                        <img src="./pic.jpeg" alt="" style="border: 0.5px black;border-radius: 50%;">
+
+                   
+                </div>
+                <div class="col-12 col-sm-6 col-sm-4 " id="self">
+                    <p style="margin-left: 20%;">
+
+                    <h2>Hi I'm Prema</h2>
+                    I hold a B.Sc. in Computer Science and specialize in developing responsive, user-centric web
+                    interfaces. My technical expertise includes HTML, CSS, JavaScript, and Bootstrap, through which I
+                    create clean, structured, and efficient front-end solutions. I am detail-oriented, driven by
+                    problem-solving, and consistently focused on expanding my technical knowledge to deliver
+                    high-quality digital experiences.
+                    </p>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark " style="padding-top: 70px;" id="Skills">
+        <div class="container ">
+            <h2 class="pt-4">Technical Skills</h2>
+            <div class="row d-flex justify-content-center">
+                <div class=" col-sm-3 card m-3" id="sk">
+                    <img id="img1" src="./html5.png" alt="">
+                </div>
+                <div class="col-sm-3 card m-3" id="sk">
+                    <img id="img1" src="./css3.png" alt="">
+                </div>
+                <div class="col-sm-3 card m-3" id="sk">
+                    <img id="img1" src="./javascript.png" alt="">
+                </div>
+                <div class="col-sm-3 card m-3" id="sk">
+                    <img id="img1" src="./bootstrap.png" alt="">
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+                <div class=" col-sm-3 card m-3" id="sk">
+                    <img id="img1" src="./mongodb-logo.png" alt="">
+                </div>
+                <div class="col-sm-3 card m-3" id="sk">
+                    <img id="img1" src="./mysql.png" alt="">
+                </div>
+                <div class="col-sm-3 card m-3" id="sk">
+                    <img id="img1" src="./python.png" alt="">
+                </div>
+                <div class="col-sm-3 card m-3" id="sk">
+                    <img id="img1" src=".//java.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid bg-dark " style="padding-top: 100px;"  id="Projects">
+        <div class="container ">
+            <h2 class="pt-5">Project</h2>
+            <div class="row ">
+                <div class="card col-12 col-sm-6 col-sm-4 bg-dark"
+                    style="border: 2px solid rgb(75, 75, 75);padding: 15px;line-height: 2;" id="pro">
+                    <div class="card-body text-white">
+                        Project Name: Pet Shop Website <br>
+                        Technologies: HTML, CSS, Bootstrap <br>
+                        About: Responsive pet store website with product listings. </div>
+                </div>
+                <div class="card col-12 col-sm-6 col-sm-4 bg-dark"
+                    style="border: 2px solid rgb(75, 75, 75);padding: 15px;line-height: 2;" id="pro">
+                    <div class="card-body text-white">
+                        Project Name: Portfolio Website
+                        Technologies: HTML, CSS, JavaScript
+                        About: A personal portfolio showcasing my skills, projects, and contact details with a clean and
+                        modern UI.</div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark " id="Contact" style="padding-top: 100px;">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12  col-md-6 " style="border: 1px solid rgb(75, 75, 75);" id="con">
+                    <div class="card contact-card p-4 text-center bg-dark text-white">
+                        <h2>Contact Me</h2>
+                        <hr>
+                        <p><strong>Name:</strong> Prema</p>
+                        <p><strong>Email:</strong> prema@gmail.com</p>
+                        <p><strong>Phone:</strong> +91 98765 43210</p>
+                        <p><strong>Location:</strong> Tamil Nadu, India</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark" style="padding-top: 70px;">
+        <div class="container">
+            <div class="row text-white">
+                <footer>
+                    <center>
+                        <p style="font-size: 15px;">&copy; 2025 Prema c &emsp; || &emsp; All rights reserved.</p>
+                    </center>
+                </footer>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
